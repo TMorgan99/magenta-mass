@@ -1,7 +1,8 @@
 ---
 const pageTitle = "About Me";
 
-import '$/styles/global.css';
+import Header from '$/components/Header.astro';
+
 
 const happy = true;
 const finished = false;
@@ -50,12 +51,8 @@ const favoriteMovies = [
 
 <body>
 
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
-
+<Header /> 
   <h1>{pageTitle}</h1>
-  <h2>... and my new Astro site!</h2>
 
   <p>
     I am working through Astro's introductory tutorial. This is the second page
